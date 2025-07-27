@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width ,initial-scale="1.0">
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <style>
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .logo {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    .menuitems {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      gap: 20px;
+    }
+    .menuitems li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: whitesmoke;
+    }
+    .hero {
+      background-image: url("https://tse4.mm.bing.net/th/id/OIP.-oWx-CtLxPxh2Nnn1r1gmwHaEK?pid=Api&P=0&h=180");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+    }
+    .pro {
+      color: darkred;
+      font-weight: bold;
+    }
+    .school > li {
+      color: darkgreen;
+      font-weight: bold;
+      list-style: none;
+    }
+    @media (max-width: 720px) {
+      .navbar {
+        flex-direction: column;
+        display: flex;
+      }
+      .menuitems {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="menuitems">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </div>
+    <div class="container-fluid" id="Home">
+      <div class="hero mt-3">
+        <h1 class="text-center mx-auto" style="color: darkblue">
+          "Good software, like wine, takes time."
+        </h1>
+      </div>
+    </div>
+    <div class="container-fluid" id="Education">
+      <hr />
+      <h1 class="text-center">Education</h1>
+      <div class="education my-4">
+        <ul
+          class="school"
+          style="
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          "
+        >
+          <li>Schooling</li>
+          <p>Geethanjali High School with good certification in studies</p>
+          <li>Intermediate</li>
+          <p>SR Junior college with Execellent marks</p>
+          <li>Bachelors of Technology</li>
+          <p>
+            Computer science specilaization of CSBT<br \ />Sastra Deemed
+            University
+          </p>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid" id="Projects">
+      <hr />
+      <h1 class="text-center my-5">Projects</h1>
+      <ul class="run" style="list-style: none">
+        <li class="my-4">
+          <span class="mb-5 pro">Portfolio Website</span><br />
+          Designed and developed a personal portfolio website using HTML, CSS,
+          and Bootstrap. The website showcases my bio, skills, projects, and
+          includes a contact form integrated with Formspree for direct
+          communication.<br />
+          <a href="yourfile.pdf" download class="btn btn-secondary mt-3"
+            >Portfolio Project</a
+          >
+        </li>
+        <li class="my-4">
+          <span class="mb-5 pro">To-Do List Application</span> <br />Built a
+          responsive to-do list app using HTML, CSS, and JavaScript. Implemented
+          features such as adding, deleting, and marking tasks as complete. Used
+          localStorage to persist user data across sessions.
+        </li>
+        <li class="my-4">
+          <span class="mb-4 pro"> Weather Application</span> <br />Created a
+          weather information website using JavaScript and the OpenWeatherMap
+          API. The app displays real-time weather updates based on the user’s
+          city input, with responsive UI design.
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid" id="About">
+      <h1 class="text-center">About</h1>
+      <hr />
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img
+            style="height: 50vh;width:auto; border-radius: 100%"
+            src="./image.jpg"
+            alt="subbu"
+          />
+        </div>
+        <div class="col-md-8">
+          <p>
+            Aspiring Web Developer with a strong foundation in HTML, CSS,
+            JavaScript, and responsive design. Passionate about building
+            user-friendly, visually appealing, and functional websites.
+            Committed to continuous learning and staying updated with the latest
+            web technologies to deliver high-quality digital experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
